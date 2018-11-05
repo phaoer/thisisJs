@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
-    eslint = require('gulp-eslint');
+    eslint = require('gulp-eslint'),
+    connect = require('gulp-connect');
 
 var dev = false;
 
@@ -40,10 +41,20 @@ gulp.task('watch', function() {
  
   dev = true; 
 
+  connect.server({
+
+      livereload:true,
+
+      port:8088
+
+   });
+
   gulp.watch('src/*.js', ['js']);
 
-  livereload.listen();
+  // livereload.listen();
 
-  gulp.watch(['dist/**','*.html']).on('change', livereload.changed);
+  gulp.watch(['dist/**','*.html']).on('change', function(event){
+      notify({ message: event.path + 'was' + event.type });
+  });
 
 });
