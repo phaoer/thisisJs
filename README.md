@@ -22,14 +22,12 @@ tools.common.isArray(arr)   //返回true or false
 - isArray(arr)
 - arraySort(arr) —— 数组排序（快排）
 - arrayEase(arr) —— 数组去重
-- arrayEase(arr) —— 数组去重
 - getUrlParam(str) —— 获取链接参数的值
 - encode(str) —— base64加密
 - decode(str) —— base64解密
 - dateFormate(date) —— 日期格式化（"yy:MM:dd hh:mm:ss"）
 - appendCss(url) —— 动态添加css
 - appendJs(url) —— 动态添加js
-- getUrlParam(str) —— 获取链接参数的值
 - getUrlParam(str) —— 获取链接参数的值
 
 ### The Relentless Pursuit of Perfection    持续更新中
