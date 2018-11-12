@@ -29,5 +29,6 @@ tools.common.isArray(arr)   //返回true or false
 - appendCss(url) —— 动态添加css
 - appendJs(url) —— 动态添加js
 - getUrlParam(str) —— 获取链接参数的值
+- checkTerminal() —— 获取终端信息（data={mobile:ture,ios:true.................}）
 
 ### The Relentless Pursuit of Perfection    持续更新中
