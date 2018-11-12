@@ -30,5 +30,11 @@ tools.common.isArray(arr)   //返回true or false
 - appendJs(url) —— 动态添加js
 - getUrlParam(str) —— 获取链接参数的值
 - checkTerminal() —— 获取终端信息（data={mobile:ture,ios:true.................}）
+- upsetArr(arr) —— 随机数组
+- checkPwdLevel(str) —— 检测密码强度 1-4 递增
+- setCookie(name, value, iDay) —— 设置cookie(名称,值,时效)
+- getCookie(name) —— 获取cookie
+- removeCookie(name) —— 删除cookie
+- getEndTime(startTime,endTime) —— 获取倒计时
 
 ### The Relentless Pursuit of Perfection    持续更新中
