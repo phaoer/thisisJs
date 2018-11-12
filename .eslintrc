@@ -8,10 +8,6 @@
       "jsx": true
     }
   },
-  "globals": {
-    "jQuery": true,
-    "$": true
-  },
   "rules": {
     "brace-style": [2, "1tbs"],
     "camelcase": 2,
