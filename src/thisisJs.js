@@ -1,5 +1,6 @@
 /**
- * author Irwin Pu
+ * @Author: Irwin Pu
+ * @Company: XunYou
  */
 var thisisJs;
 (function() {
@@ -333,6 +334,24 @@ var thisisJs;
         sec: s
       };
       return data;
+    },
+    /**
+     * 倒计时（默认开始时间为当前时间）
+     * @param data 
+     */
+    fileUpload:function(options){
+      if(typeof $ === "undefined" && typeof jQuery === "undefined"){
+        alert("文件上传依赖jQuery，请先引入jQuery");
+        return false;
+      }
+      $("#" + options.id).ajaxfileupload({
+        url: options.url,
+        fileType : options.fileType,
+        data: options.data,
+        complete: options.complete,
+        start: options.start,
+        cancel: options.cancel
+      });
     }
   };
   thisisJs = init;

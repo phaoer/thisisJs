@@ -1,5 +1,5 @@
 # thisisJs-1.0.0.js
-**综合了常用的js方法，以及一些基本算法，复用性高，不依赖任何库**
+**综合了常用的js方法，以及一些基本算法，复用性高。**
 
 ## 如何贡献
 
@@ -33,8 +33,20 @@ tools.common.isArray(arr)   //返回true or false
 - upsetArr(arr) —— 随机数组
 - checkPwdLevel(str) —— 检测密码强度 1-4 递增
 - setCookie(name, value, iDay) —— 设置cookie(名称,值,时效)
+    - @name {str}
+    - @value {str}
+    - @iDay {str}
 - getCookie(name) —— 获取cookie
 - removeCookie(name) —— 删除cookie
 - getEndTime(startTime,endTime) —— 获取倒计时
+- fileUpload(options) —— 图片上传
+    - @options {json}
+    - id：file控件id
+    - url：请求地址
+    - fileType：允许上传文件类型
+    - data：附加参数
+    - start：开始上传回调函数
+    - complete：上传成功回调函数
+    - cancel：取消上传回调函数
 
 ### The Relentless Pursuit of Perfection    持续更新中
