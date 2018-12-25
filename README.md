@@ -22,6 +22,9 @@ tools.common.isArray(arr)   //返回true or false
 - isArray(arr)
 - arraySort(arr) —— 数组排序（快排）
 - arrayEase(arr) —— 数组去重
+- arrySlice(arr,num) —— 数组切割
+    - @arr {arr}
+    - @num {int}
 - getUrlParam(str) —— 获取链接参数的值
 - encode(str) —— base64加密
 - decode(str) —— base64解密

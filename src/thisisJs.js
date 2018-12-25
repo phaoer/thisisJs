@@ -60,6 +60,20 @@ var thisisJs;
       return newArr;
     },
     /**
+     * @param arr 数组切割
+     */
+    arrySlice:function(arr,num){
+        var arr = [];
+        if(arr.length > num){
+            for(var i = 0;i < Math.ceil(arr.length / num);i++){
+                arr.push(arr.slice(i * num,(i + 1) * num));
+            }
+        }else{
+            arr.push(list);
+        };
+        return arr;
+    },
+    /**
      * @param name 获取参数名 
      */
     getUrlParam: function(name) {
